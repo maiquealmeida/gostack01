@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #1d003f;
+
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+body::after {
+  content: "";
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/psychedelic_pattern.png");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+h1 {
+  font-weight: normal;
+  margin-bottom: 22px;
+  text-shadow: rgba(0, 0, 0, 0.2) 3px 3px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+}
+
+.form-row-align {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row-button {
+  width: 100%;
+}
+
+.major {
+  fill: #00dd00 !important;
+}
+
+.minor {
+  fill: #dd0000 !important;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.2);
+}

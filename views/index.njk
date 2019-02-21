@@ -1,0 +1,24 @@
+{% extends './templates/default.njk' %}
+{% block main %}
+  <div class="form">
+    <h1>GoStack - Desafio 01 - #GoNodeJS</h1>
+    <form class="" method="post" action="/check">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="form-row form-row-align">
+
+          <div class="form-group col-sm-12 text-center d-flex flex-column justify-content-center align-items-center input-group-lg">
+            <label for="age">Informe sua idade</label>
+            <input name="age" type="number" class="form-control col-sm-6" id="age" placeholder="Idade">
+          </div>
+        </div>
+        <div class="form-row form-row-align form-row-button">
+          <div class="form-group col-sm-12 ">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Verificar</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+{% endblock main %}

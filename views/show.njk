@@ -1,0 +1,14 @@
+{% extends './templates/default.njk' %}
+{% block main %}
+  <div class="d-flex flex-column justify-content-center align-items-center">
+
+    <div data-icon="{{icon}}" data-size="l" class="{{ color }}"></div>
+
+    Você é {{ situacao }} e possui {{ age }}
+    {% if age > 1 %} anos {% else %} ano {% endif %}.
+  </div>
+
+  <footer>
+    <span>GoStack - Desafio 01 - #GoNodeJS - Maique Almeida</span>
+  </footer>
+{% endblock main %}
